@@ -1,4 +1,4 @@
-# Breast Cancer Prediction using SVM
+# Breast Cancer Prediction using SVM Classifier
 
 ## Project Overview
 
