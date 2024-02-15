@@ -43,3 +43,4 @@ We compared our first SVM try with the improved version and saw that the changes
 
 ## Where the Data Came From
 The data was first put together by people named Wolberg, Mangasarian, and Street in 1995. You can find it in the UCI Machine Learning Repository.
+- Wolberg,William, Mangasarian,Olvi, Street,Nick, and Street,W.. (1995). Breast Cancer Wisconsin (Diagnostic). UCI Machine Learning Repository. https://doi.org/10.24432/C5DW2B.
