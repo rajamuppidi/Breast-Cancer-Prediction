@@ -2,45 +2,44 @@
 
 ## Project Overview
 
-This project aims to develop a machine learning model to predict breast cancer based on features derived from digitized images of a fine needle aspirate (FNA) of a breast mass. I have used the Breast Cancer Wisconsin (Diagnostic) dataset, which contains characteristics of the cell nuclei present in the images. In this project i have used the Support Vector Machine (SVM), classifier , to distinguish between malignant and benign tumors.
+This project is about making a computer program that can guess if breast cancer is the harmful kind (malignant) or the not-so-harmful kind (benign). We used a special method called Support Vector Machine (SVM) to do this. The information we used to help the computer learn comes from pictures of breast cells.
 
 ## Dataset
 
-The dataset used in this project is the Breast Cancer Wisconsin (Diagnostic) dataset, available in the UCI Machine Learning Repository. It consists of 569 instances, each with 30 numeric, predictive attributes, and a binary target variable indicating the diagnosis (M = malignant, B = benign).
+We got our data from a place called the UCI Machine Learning Repository. It's called the Breast Cancer Wisconsin (Diagnostic) dataset. It has info from 569 different cases, each with 30 details about the cells, and a note saying if the cancer is malignant or benign.
 
-## Methodology
+## How We Did It
 
-The project follows these steps:
+Here's what we did step by step:
 
-1. **Data Preprocessing**: The dataset is loaded, cleaned, and prepared for modeling. This includes handling missing values (if any) and mapping the diagnosis column to binary values.
-2. **Exploratory Data Analysis (EDA)**: Conducted an initial analysis to understand the data's characteristics and distribution.
-3. **Model Training with Default SVM**: A Support Vector Machine (SVM) classifier is initially trained with default parameters to establish a baseline performance.
-4. **Model Evaluation**: The default SVM model's performance is evaluated using metrics such as accuracy, sensitivity (recall), and specificity.
-5. **Hyperparameter Tuning**: GridSearchCV is employed to fine-tune the SVM hyperparameters (C, gamma, and kernel) to improve the model's performance.
-6. **Final Model Evaluation**: The tuned SVM model is evaluated on the test set, and its performance is compared to the baseline model.
+1. **Getting the Data Ready**: We made sure the data was clean and ready for the computer to learn from. This meant checking for any missing info and setting up the cancer labels as either 0 (benign) or 1 (malignant).
+2. **Looking at the Data**: We first looked at the data to see what it's like and how the details of the cells might help us predict cancer.
+3. **First Try with SVM**: We started with a basic version of SVM to see how well it could predict cancer without making any adjustments.
+4. **Checking How Good It Is**: We checked how accurate our first try was in predicting cancer, looking at how often it was right, and how good it was at finding both benign and malignant cases.
+5. **Making It Better**: We used something called GridSearchCV to adjust the SVM settings to make our predictions better.
+6. **Final Check**: We checked our improved SVM on a separate set of data to see how much better it got.
 
 ## Results
 
-The project includes a detailed comparison of the default SVM model and the tuned SVM model, highlighting the improvement in prediction accuracy, sensitivity, and specificity achieved through hyperparameter tuning.
+We compared our first SVM try with the improved version and saw that the changes really helped. Our program got better at predicting cancer correctly.
 
-## How to Run
+## How to Use This
 
-- Ensure Python 3.x is installed along with Jupyter Notebook.
-- Install necessary libraries: pandas, sklearn, matplotlib, seaborn (optional for EDA).
-- Clone the repository and navigate to the project directory.
-- Open the Jupyter Notebook (`BreastCancer_Prediction_SVM.ipynb`) and run all cells.
+- You need to have Python and a tool called Jupyter Notebook on your computer.
+- You'll also need a few extra tools you can add to Python, like pandas (for working with data) and sklearn (for machine learning).
+- You can get everything set up by copying our project from GitHub, going to the project folder, and opening the `BreastCancer_Prediction_SVM.ipynb` file in Jupyter Notebook. Just run everything in there, and you'll see how it works.
 
-## Dependencies
+## What You Need
 
-- Python 3.x
-- pandas
-- scikit-learn
+- Python
+- pandas (a Python tool)
+- scikit-learn (another Python tool)
 - Jupyter Notebook
 
-## Contributors
+## Thanks to
 
 - Raja Muppidi
 - Weihua Zhou
 
-## Dataset Source
-- Wolberg,William, Mangasarian,Olvi, Street,Nick, and Street,W.. (1995). Breast Cancer Wisconsin (Diagnostic). UCI Machine Learning Repository. https://doi.org/10.24432/C5DW2B.
+## Where the Data Came From
+The data was first put together by people named Wolberg, Mangasarian, and Street in 1995. You can find it in the UCI Machine Learning Repository.
